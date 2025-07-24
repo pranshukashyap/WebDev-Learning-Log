@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevConnect - Developer Contact Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👨‍💻 DevConnect</h1>
+      <p>Manage your developer contacts easily — just like a pro.</p>
+    </header>
+
+    <section class="form-section">
+      <h2>Add Developer Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <input type="text" id="language" placeholder="Preferred Language (e.g., JavaScript)" required />
+        <input type="text" id="skills" placeholder="Skills (comma-separated)" required />
+        <button type="submit">Add Contact</button>
+      </form>
+    </section>
+
+    <section class="contacts-section">
+      <h2>Saved Contacts</h2>
+      <div id="contacts-list" class="contacts-list">
+        <!-- Contacts will be inserted here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
